@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noLib": false,
+    "outDir": "dest/",
+    "removeComments": true,
+    "target": "es5"
+  },
+  "files": [
+    "src/arg_li.ts",
+    "src/ast-interface.ts",
+    "src/ast.ts",
+    "src/it-panel.ts",
+    "src/resource-panel.ts",
+    "src/selectable-input.ts",
+    "src/serverspec_info.ts",
+    "src/ui.ts"
+  ]
+}
