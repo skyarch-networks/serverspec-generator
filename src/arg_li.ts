@@ -1,4 +1,4 @@
-/// <reference path="../../declares.d.ts" />
+/// <reference path="../typings/bundle.d.ts" />
 
 export default Vue.extend({
   template: '#arg-li-template',

@@ -1,5 +1,4 @@
-/// <reference path="../../declares.d.ts" />
-/// <reference path="../../query-string.d.ts" />
+/// <reference path="../typings/bundle.d.ts" />
 
 import ResourcePanel     from './resource-panel';
 import ItPanel           from './it-panel';
