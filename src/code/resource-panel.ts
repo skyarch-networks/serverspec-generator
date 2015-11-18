@@ -1,9 +1,10 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
 import * as ASTInterface from './ast-interface';
+import * as Templates from './templates';
 
 export default Vue.extend({
-  template: '#resource-panel-template',
+  template: Templates['resource_panel.html'],
   el: () => { return document.createElement('div'); },
   data: () => {return {down: true}; },
   props: {

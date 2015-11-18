@@ -1,7 +1,9 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
+import * as Templates from './templates';
+
 export default Vue.extend({
-  template: '#selectable-input-template',
+  template: Templates['selectable_input.html'],
   el: () => {return document.createElement('div'); },
   data: () => {return {manual_check: false, id: _.uniqueId('selectable-input-id-')}; },
   props: {

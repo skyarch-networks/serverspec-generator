@@ -1,11 +1,10 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
 import * as ASTInterface from './ast-interface';
-
-Vue.config.debug = true;
+import * as Templates from './templates';
 
 export default Vue.extend({
-  template: '#it-panel-template',
+  template: Templates['it_panel.html'],
   el: () => {return document.createElement('div'); },
   data: () => {return {down: true}; },
   props: {

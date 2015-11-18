@@ -1,7 +1,9 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
+import * as Templates from './templates';
+
 export default Vue.extend({
-  template: '#arg-li-template',
+  template: Templates['arg_li.html'],
   el: () => {return document.createElement('div'); },
   props: {
     name: {

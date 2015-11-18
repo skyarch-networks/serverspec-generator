@@ -17,6 +17,7 @@
     "src/code/resource-panel.ts",
     "src/code/selectable-input.ts",
     "src/code/serverspec_info.ts",
+    "src/code/templates.d.ts",
     "src/code/ui.ts"
   ]
 }
