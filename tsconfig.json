@@ -10,13 +10,13 @@
     "target": "es5"
   },
   "files": [
-    "src/arg_li.ts",
-    "src/ast-interface.ts",
-    "src/ast.ts",
-    "src/it-panel.ts",
-    "src/resource-panel.ts",
-    "src/selectable-input.ts",
-    "src/serverspec_info.ts",
-    "src/ui.ts"
+    "src/code/arg_li.ts",
+    "src/code/ast-interface.ts",
+    "src/code/ast.ts",
+    "src/code/it-panel.ts",
+    "src/code/resource-panel.ts",
+    "src/code/selectable-input.ts",
+    "src/code/serverspec_info.ts",
+    "src/code/ui.ts"
   ]
 }
