@@ -7,8 +7,10 @@ import ArgLi             from './arg_li';
 import * as Info         from './serverspec_info';
 import * as ASTInterface from './ast-interface';
 import * as AST          from './ast';
+import * as Templates    from './templates';
 
 // This is defined by rails in eruby.
+// XXX: replace
 declare const SERVERSPEC_INFO: Info.ServerspecInfo;
 
 
@@ -24,6 +26,7 @@ class VueMain extends Vue {
 
     super({
       el: '#main',
+      template: Templates['generator.html'],
       data: {
         ast: this.ast,
       },

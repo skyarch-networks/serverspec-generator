@@ -1,17 +1,10 @@
-<div class="container" id="main" v-cloak>
-  <h2 class="page-header">
-    <%=t('serverspecs.generator.title')%>
-    <% if @infra %>
-      <small><%= ('for ' + link_to(@infra.stack_name, infrastructures_path(project_id: @infra.project_id, infrastructure_id: @infra.id))).html_safe %></small>
-    <% end %>
-  </h2>
-
+<div class="container" v-cloak>
   <div class="row">
     <div class="col-xs-6">
 
-      <h3><%=t('serverspecs.generator.resources')%></h3>
+      <h3>Resources</h3>
       <button class="btn btn-default" @click="addDescribe()">
-        <span class="glyphicon glyphicon-plus-sign"></span> <%=t('serverspecs.generator.add_resource')%>
+        <span class="glyphicon glyphicon-plus-sign"></span> Add Resource
       </button>
 
       <div v-for="desc in ast">
@@ -21,18 +14,8 @@
 
 
     <div class="col-xs-6">
-      <h3><%=t('serverspecs.generator.generated')%></h3>
+      <h3>Generated Serverspec</h3>
       <pre v-ace="rubyCode"><code v-text="rubyCode"></code></pre>
     </div>
   </div>
-
-  <div class="row form-actions-top">
-    <button class="btn btn-primary"><%=t('helpers.titles.save')%></button>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-      serverspecs_path(infrastructure_id: @infra.try(:id)), class: 'btn-default btn' %>
-  </div>
 </div>
-
-<script type="text/javascript">
-var SERVERSPEC_INFO =  <%= @serverspec_info.to_json.html_safe %>
-</script>
