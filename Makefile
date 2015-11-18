@@ -3,7 +3,8 @@ export PATH := node_modules/.bin$(PATH)
 all:
 	tsc
 
-typing:
+depends:
+	npm install
 	dtsm install
 
 lint:
