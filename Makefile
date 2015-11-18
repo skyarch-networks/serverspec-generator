@@ -2,6 +2,7 @@ export PATH := node_modules/.bin$(PATH)
 
 all:
 	shopt -s globstar && tsconfig-updater src/**/*.ts
+	js-file2string src/template/* > dest/templates.js
 	tsc
 
 depends:
