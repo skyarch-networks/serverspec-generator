@@ -21,8 +21,6 @@ const app = new VueMain([], Info.value);
 console.log(app);
 
 $(document).on('click', '#save-btn', () => {
-  console.log(app.rubyCode);
-
   const file = new File([app.rubyCode], 'generated_spec.rb');
   const url = window.URL.createObjectURL(file);
   const a = document.createElement('a');
