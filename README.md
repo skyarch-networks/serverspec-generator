@@ -26,3 +26,12 @@ $ make
 ```sh
 $ make lint
 ```
+
+
+### Run example
+
+```sh
+$ make browserify
+```
+
+and open example/index.html by browser
