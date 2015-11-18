@@ -9,6 +9,8 @@ import * as ASTInterface from './ast-interface';
 import * as AST          from './ast';
 import * as Templates    from './templates';
 
+import Vue = require('vue');
+
 // This is defined by rails in eruby.
 // XXX: replace
 declare const SERVERSPEC_INFO: Info.ServerspecInfo;
