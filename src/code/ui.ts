@@ -1,9 +1,5 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
-import ResourcePanel     from './resource-panel';
-import ItPanel           from './it-panel';
-import SelectableInput   from './selectable-input';
-import ArgLi             from './arg_li';
 import * as Info         from './serverspec_info';
 import * as ASTInterface from './ast-interface';
 import * as AST          from './ast';
@@ -11,12 +7,7 @@ import * as Templates    from './templates';
 
 import Vue = require('vue');
 
-// This is defined by rails in eruby.
-// XXX: replace
-declare const SERVERSPEC_INFO: Info.ServerspecInfo;
-
-
-class VueMain extends Vue {
+export default class VueMain extends Vue {
   private ast:  ASTInterface.Describe[];
   private info: Info.ServerspecInfo;
 
@@ -27,7 +18,7 @@ class VueMain extends Vue {
     this.info = info;
 
     super({
-      el: '#main',
+      el: () => {return document.createElement("div"); },
       template: Templates['generator.html'],
       data: {
         ast: this.ast,
@@ -64,10 +55,3 @@ ${ast.to_ruby()}`;
   }
 }
 
-if (document.querySelector('#main')) {
-  Vue.component("resource-panel", ResourcePanel);
-  Vue.component("it-panel", ItPanel);
-  Vue.component("selectable-input", SelectableInput);
-  Vue.component("arg-li", ArgLi);
-  const __ = new VueMain([], SERVERSPEC_INFO);
-}

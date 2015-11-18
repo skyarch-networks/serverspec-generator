@@ -2,6 +2,7 @@
 
 import * as ASTInterface from './ast-interface';
 import * as Templates from './templates';
+import Vue = require('vue');
 
 export default Vue.extend({
   template: Templates['resource_panel.html'],
