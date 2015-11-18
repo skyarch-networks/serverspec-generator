@@ -11,7 +11,7 @@ export default class VueMain extends Vue {
   private ast:  ASTInterface.Describe[];
   private info: Info.ServerspecInfo;
 
-  private rubyCode:      string;
+  public rubyCode:      string;
 
   constructor(ast: ASTInterface.Describe[], info: Info.ServerspecInfo) {
     this.ast  = ast;
