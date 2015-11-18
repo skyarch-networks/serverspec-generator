@@ -5,6 +5,12 @@ import ArgLi             from './code/arg_li';
 import VueMain           from './code/ui';
 import * as Info         from './info';
 
+import * as $ from 'jquery';
+(<any>window).jQuery = $;
+(<any>window).$ = $;
+import 'bootstrap';
+
+
 import Vue = require('vue');
 
 Vue.component("resource-panel", ResourcePanel);
