@@ -15,7 +15,7 @@
 
     <div class="form-group">
       <label>
-        <%# TODO: Improve Style... %>
+        <!-- TODO: Improve Style... -->
         Should/Should not <input type="checkbox" v-model="it.should">
       </label>
     </div>
@@ -32,7 +32,7 @@
         :use.sync="c.use">
       </arg-li>
 
-      <%# Why track-by? => https://github.com/vuejs/vue/issues/1730 %>
+      <!-- Why track-by? => https://github.com/vuejs/vue/issues/1730 -->
       <arg-li
         v-for="a in it.matcher.args"
         track-by="$index"

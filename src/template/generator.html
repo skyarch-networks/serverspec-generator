@@ -1,4 +1,3 @@
-<% provide(:title, I18n.t('serverspecs.generator.title')) %>
 <div class="container" id="main" v-cloak>
   <h2 class="page-header">
     <%=t('serverspecs.generator.title')%>
@@ -37,8 +36,3 @@
 <script type="text/javascript">
 var SERVERSPEC_INFO =  <%= @serverspec_info.to_json.html_safe %>
 </script>
-
-<script id="resource-panel-template"   type="text/template"> <%= render 'gen_resource' %> </script>
-<script id="it-panel-template"         type="text/template"> <%= render 'gen_it' %> </script>
-<script id="selectable-input-template" type="text/template"> <%= render 'gen_selectable_input' %> </script>
-<script id="arg-li-template"           type="text/template"> <%= render 'gen_arg_li' %> </script>
