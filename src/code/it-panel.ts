@@ -2,6 +2,7 @@
 
 import * as ASTInterface from './ast-interface';
 import * as Templates from './templates';
+import * as _ from 'lodash';
 import Vue = require('vue');
 
 export default Vue.extend({

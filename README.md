@@ -13,6 +13,7 @@ Development
 
 - nodejs && npm
 - make
+- ruby 2.2 or newer
 - Go 1.5 or newer
 
 ```sh

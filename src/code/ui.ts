@@ -1,6 +1,6 @@
 /// <reference path="../../typings/bundle.d.ts" />
 
-import * as Info         from './serverspec_info';
+import * as Info         from '../info';
 import * as ASTInterface from './ast-interface';
 import * as AST          from './ast';
 import * as Templates    from './templates';

@@ -1,4 +1,4 @@
-/// <reference path="../../typings/bundle.d.ts" />
+/// <reference path="../typings/bundle.d.ts" />
 
 export interface ServerspecInfo {
   [resource_name: string]: Resource;
@@ -17,3 +17,6 @@ export interface Matcher {
   parameters: string[];
   chains:     string[];
 }
+
+declare const value: ServerspecInfo;
+export {value}

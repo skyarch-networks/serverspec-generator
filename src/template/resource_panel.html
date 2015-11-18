@@ -10,7 +10,7 @@
     <form class="form-inline">
       <div class="form-group">
         <label>
-          <%= t('serverspecs.generator.resource_type') %>:
+          Resource Type
         </label>
           <select class="form-control" v-model="desc.resourceType">
             <option v-for="t in resourceTypes" :value="t">{{t}}</option>
@@ -23,13 +23,13 @@
 
     <div class="form-group">
       <label>
-        <%= t('serverspecs.generator.name') %>
+        Name
         <input type="text" class="form-control" required v-model="desc.name">
       </label>
     </div>
 
-    <button class="btn btn-success" @click="addIt(desc)"><%=t('serverspecs.generator.add_it')%></button>
-    <button class="btn btn-success" @click="addIts(desc)"><%=t('serverspecs.generator.add_its')%></button>
+    <button class="btn btn-success" @click="addIt(desc)">Add It</button>
+    <button class="btn btn-success" @click="addIts(desc)">Add Its</button>
 
     <div v-for="it in desc.body">
       <it-panel :it.sync="it" :resource="resource">

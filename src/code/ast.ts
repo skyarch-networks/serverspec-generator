@@ -28,6 +28,7 @@
 // ]
 
 import * as ASTInterface from './ast-interface';
+import * as _ from 'lodash';
 
 export class Top {
   private describes: Describe[];
