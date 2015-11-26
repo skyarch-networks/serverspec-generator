@@ -17,3 +17,6 @@ depends:
 
 lint:
 	tslint **/*.ts
+
+clean:
+	git clean -xf
