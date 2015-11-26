@@ -9,8 +9,7 @@
     "node": ">= 0.10"
   },
   "scripts": {
-    "test": "karma start --single-run",
-    "preinstall": "make depends && make"
+    "test": "karma start --single-run"
   },
   "main": "dest/main.js",
   "typings": "./dest/main.d.ts",
