@@ -1,9 +1,5 @@
-import ResourcePanel     from './code/resource-panel';
-import ItPanel           from './code/it-panel';
-import SelectableInput   from './code/selectable-input';
-import ArgLi             from './code/arg_li';
-import VueMain           from './code/ui';
-import * as Info         from './info';
+// for example
+import * as main from './main';
 
 import * as $ from 'jquery';
 (<any>window).jQuery = $;
@@ -13,11 +9,7 @@ import 'bootstrap';
 
 import Vue = require('vue');
 
-Vue.component("resource-panel", ResourcePanel);
-Vue.component("it-panel", ItPanel);
-Vue.component("selectable-input", SelectableInput);
-Vue.component("arg-li", ArgLi);
-const app = new VueMain([], Info.value);
+const app = new main.App([], main.Info.value);
 console.log(app);
 
 $(document).on('click', '#save-btn', () => {
