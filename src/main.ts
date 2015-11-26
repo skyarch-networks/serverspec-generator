@@ -1,5 +1,3 @@
-/// <reference path="../typings/bundle.d.ts" />
-
 // For export modules
 
 import ResourcePanel     from './code/resource-panel';

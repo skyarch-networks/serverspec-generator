@@ -1,5 +1,3 @@
-/// <reference path="../../typings/bundle.d.ts" />
-
 // [
 //   {
 //     resource_type: "type",

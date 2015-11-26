@@ -1,5 +1,3 @@
-/// <reference path="../../typings/bundle.d.ts" />
-
 export interface Describe {
   resourceType: string;
   name: string;
