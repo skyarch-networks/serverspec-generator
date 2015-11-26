@@ -11,8 +11,8 @@
   "scripts": {
     "test": "karma start --single-run"
   },
-  "main": "dest/main.js",
-  "typings": "./dest/main.d.ts",
+  "main": "dest/src/main.js",
+  "typings": "./dest/src/main.d.ts",
   "dependencies": {
     "bootstrap": "^3.3.5",
     "jquery": "^2.1.4",
@@ -22,6 +22,8 @@
   "devDependencies": {
     "browserify": "^12.0.1",
     "dtsm": "^0.13.0",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.2.0",
     "tslint": "^2.4.2",
     "typescript": "~1.6.2"
   }

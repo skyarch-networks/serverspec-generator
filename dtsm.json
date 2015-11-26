@@ -24,6 +24,15 @@
     },
     "vue/vue.d.ts": {
       "ref": "c39b8085d0d460cbae679bc4905cb00b02e9bd18"
+    },
+    "mocha/mocha.d.ts": {
+      "ref": "e48f0c7a0a5f9e9d35e9cfd7506461bab435cb49"
+    },
+    "empower/empower.d.ts": {
+      "ref": "e48f0c7a0a5f9e9d35e9cfd7506461bab435cb49"
+    },
+    "power-assert/power-assert.d.ts": {
+      "ref": "e48f0c7a0a5f9e9d35e9cfd7506461bab435cb49"
     }
   }
 }

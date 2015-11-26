@@ -21,6 +21,7 @@
     "src/index.ts",
     "src/info.d.ts",
     "src/main.ts",
-    "typings/bundle.d.ts"
+    "typings/bundle.d.ts",
+    "test/serverspec-gen/ast_test.ts"
   ]
 }

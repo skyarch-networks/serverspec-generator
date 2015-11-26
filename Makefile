@@ -1,11 +1,11 @@
 export PATH := node_modules/.bin:$(PATH)
 
 all: template
-	shopt -s globstar && tsconfig-updater src/**/*.ts typings/bundle.d.ts
+	shopt -s globstar && tsconfig-updater src/**/*.ts typings/bundle.d.ts test/**/*.ts
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
 	tsc -d
-	cp src/info.d.ts dest/
+	cp src/info.d.ts dest/src/
 
 template: src/template/*
 	js-file2string -fr src/template/* > dest/code/templates.js
