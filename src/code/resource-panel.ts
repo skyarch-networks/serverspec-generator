@@ -6,7 +6,7 @@ import * as _ from 'lodash';
 import Vue = require('vue');
 
 export default Vue.extend({
-  template: Templates['resource_panel.html'],
+  template: Templates.resource_panel_html,
   el: () => { return document.createElement('div'); },
   data: () => {return {down: true}; },
   props: {

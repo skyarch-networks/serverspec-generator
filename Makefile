@@ -1,8 +1,9 @@
 export PATH := node_modules/.bin:$(PATH)
 
 all:
+	js-file2string -fr src/template/* > dest/code/templates.js
+	js-file2string -frt src/template/* > src/code/templates.d.ts
 	shopt -s globstar && tsconfig-updater src/**/*.ts
-	cd src/template/ && js-file2string * > ../../dest/code/templates.js
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
 

@@ -4,7 +4,7 @@ import * as Templates from './templates';
 import Vue = require('vue');
 
 export default Vue.extend({
-  template: Templates['arg_li.html'],
+  template: Templates.arg_li_html,
   el: () => {return document.createElement('div'); },
   props: {
     name: {

@@ -19,7 +19,7 @@ export default class VueMain extends Vue {
 
     super({
       el: () => {return document.createElement("div"); },
-      template: Templates['generator.html'],
+      template: Templates.generator_html,
       data: {
         ast: this.ast,
       },

@@ -5,7 +5,7 @@ import * as _ from 'lodash';
 import Vue = require('vue');
 
 export default Vue.extend({
-  template: Templates['selectable_input.html'],
+  template: Templates.selectable_input_html,
   el: () => {return document.createElement('div'); },
   data: () => {return {manual_check: false, id: _.uniqueId('selectable-input-id-')}; },
   props: {
