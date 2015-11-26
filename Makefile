@@ -4,6 +4,7 @@ all: template
 	shopt -s globstar && tsconfig-updater src/**/*.ts
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
+	tsc -d
 
 template: src/template/*
 	js-file2string -fr src/template/* > dest/code/templates.js

@@ -13,6 +13,7 @@
     "preinstall": "make depends && make"
   },
   "main": "dest/main.js",
+  "typings": "./dest/main.d.ts",
   "dependencies": {
     "bootstrap": "^3.3.5",
     "jquery": "^2.1.4",
