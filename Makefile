@@ -5,6 +5,7 @@ all: template
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
 	tsc -d
+	cp src/info.d.ts dest/
 
 template: src/template/*
 	js-file2string -fr src/template/* > dest/code/templates.js
