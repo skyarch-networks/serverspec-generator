@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "karma start --single-run",
-    "prepublish": "make"
+    "preinstall": "make"
   },
   "dependencies": {
     "bootstrap": "^3.3.5",
