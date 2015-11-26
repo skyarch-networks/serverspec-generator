@@ -1,0 +1,11 @@
+[[rule]]
+glob    = "src/template/*"
+command = "make template"
+
+[[rule]]
+glob    = "src/**/*.ts"
+command = "tsc"
+
+[[rule]]
+glob    = "dest/**/*.js"
+command = "make browserify"

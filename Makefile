@@ -1,11 +1,14 @@
 export PATH := node_modules/.bin:$(PATH)
 
-all:
-	js-file2string -fr src/template/* > dest/code/templates.js
-	js-file2string -frt src/template/* > src/code/templates.d.ts
+all: template
 	shopt -s globstar && tsconfig-updater src/**/*.ts
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
+
+template: src/template/*
+	js-file2string -fr src/template/* > dest/code/templates.js
+	js-file2string -frt src/template/* > src/code/templates.d.ts
+
 
 browserify:
 	browserify dest/index.js -o example/index.js
