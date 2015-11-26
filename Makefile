@@ -1,7 +1,7 @@
 export PATH := node_modules/.bin:$(PATH)
 
 all: template
-	shopt -s globstar && tsconfig-updater src/**/*.ts
+	shopt -s globstar && tsconfig-updater src/**/*.ts typings/bundle.d.ts
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
 	tsc -d
