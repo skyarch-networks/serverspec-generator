@@ -1,5 +1,3 @@
-/// <reference path="../../typings/bundle.d.ts" />
-
 import * as Templates from './templates';
 import Vue = require('vue');
 

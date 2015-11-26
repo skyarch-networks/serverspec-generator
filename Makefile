@@ -1,9 +1,11 @@
 export PATH := node_modules/.bin:$(PATH)
 
 all: template
-	shopt -s globstar && tsconfig-updater src/**/*.ts
+	shopt -s globstar && tsconfig-updater src/**/*.ts typings/bundle.d.ts
 	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/info.js
 	tsc
+	tsc -d
+	cp src/info.d.ts dest/
 
 template: src/template/*
 	js-file2string -fr src/template/* > dest/code/templates.js
@@ -14,7 +16,6 @@ browserify:
 	browserify dest/index.js -o example/index.js
 
 depends:
-	npm install
 	dtsm install
 	go get -u github.com/pocke/tsconfig-updater github.com/pocke/js-file2string
 	cd gen-serverspec-info/ && bundle install

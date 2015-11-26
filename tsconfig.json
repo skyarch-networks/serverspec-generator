@@ -19,6 +19,8 @@
     "src/code/templates.d.ts",
     "src/code/ui.ts",
     "src/index.ts",
-    "src/info.d.ts"
+    "src/info.d.ts",
+    "src/main.ts",
+    "typings/bundle.d.ts"
   ]
 }

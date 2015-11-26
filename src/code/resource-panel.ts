@@ -1,5 +1,3 @@
-/// <reference path="../../typings/bundle.d.ts" />
-
 import * as ASTInterface from './ast-interface';
 import * as Templates from './templates';
 import * as _ from 'lodash';
