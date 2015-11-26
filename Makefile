@@ -14,7 +14,6 @@ browserify:
 	browserify dest/index.js -o example/index.js
 
 depends:
-	npm install
 	dtsm install
 	go get -u github.com/pocke/tsconfig-updater github.com/pocke/js-file2string
 	cd gen-serverspec-info/ && bundle install

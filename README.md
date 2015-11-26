@@ -17,6 +17,7 @@ Development
 - Go 1.5 or newer
 
 ```sh
+$ npm i
 $ make depends
 $ make
 ```
