@@ -7,6 +7,12 @@ import ArgLi             from './code/arg_li';
 import * as info         from './info';
 import Vue = require('vue');
 
+import * as vace from 'vue-ace';
+import 'brace/mode/ruby';
+import 'brace/theme/github';
+
+Vue.use(vace, true, 'ruby');
+
 Vue.component("resource-panel", ResourcePanel);
 Vue.component("it-panel", ItPanel);
 Vue.component("selectable-input", SelectableInput);
