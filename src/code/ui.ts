@@ -47,9 +47,7 @@ export default class VueMain extends Vue {
 
   _rubyCode(): string {
     const ast = new AST.Top(this.ast);
-    return `require 'serverspec_helper'
-
-${ast.to_ruby()}`;
+    return ast.to_ruby();
   }
 }
 
