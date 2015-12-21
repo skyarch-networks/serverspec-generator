@@ -15,6 +15,7 @@
   "typings": "./dest/src/main.d.ts",
   "dependencies": {
     "bootstrap": "^3.3.5",
+    "brace": "^0.7.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "vue": "^1.0.8",
