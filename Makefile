@@ -2,7 +2,7 @@ export PATH := node_modules/.bin:$(PATH)
 
 all: template
 	shopt -s globstar && tsconfig-updater src/**/*.ts typings/bundle.d.ts test/**/*.ts
-	cd ./gen-serverspec-info/ && bundle exec ./main.rb > ../dest/src/info.js
+	bundle exec ruby gen-serverspec-info/main.rb > dest/src/info.js
 	tsc
 	tsc -d
 	cp src/info.d.ts dest/src/
@@ -18,7 +18,7 @@ browserify:
 depends:
 	dtsm install
 	go get -u github.com/pocke/tsconfig-updater github.com/pocke/js-file2string
-	cd gen-serverspec-info/ && bundle install
+	bundle install
 
 lint:
 	tslint **/*.ts
