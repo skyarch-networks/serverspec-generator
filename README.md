@@ -1,7 +1,7 @@
 Serverspec-generator
 ============
 
-
+[![npm version](https://badge.fury.io/js/serverspec-generator.svg)](https://badge.fury.io/js/serverspec-generator)
 
 
 Development
