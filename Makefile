@@ -25,3 +25,10 @@ lint:
 
 clean:
 	git clean -xf
+
+publish: all
+	git pull
+	ruby version_up.rb
+	git commit -m "Bump up version"
+	npm publish
+	git push origin master

@@ -36,3 +36,17 @@ $ make browserify
 ```
 
 and open example/index.html by browser
+
+
+
+### bundle update flow
+
+#### Merge bundle update Pull Request
+
+e.g. https://github.com/skyarch-networks/serverspec-generator/pull/8
+
+#### Publish
+
+```sh
+make publish
+```
