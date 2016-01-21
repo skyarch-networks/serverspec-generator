@@ -1,8 +1,11 @@
 {
   "name": "serverspec-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A library for generation serverspec",
-  "keywords": ["serverspec", "DevOps"],
+  "keywords": [
+    "serverspec",
+    "DevOps"
+  ],
   "author": "Masataka Kuwabara <p.ck.t22@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -12,9 +15,9 @@
   },
   "main": "dest/src/main.js",
   "typings": "./dest/src/main.d.ts",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/skyarch-networks/serverspec-generator.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/skyarch-networks/serverspec-generator.git"
   },
   "dependencies": {
     "bootstrap": "^3.3.5",
