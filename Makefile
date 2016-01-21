@@ -29,6 +29,7 @@ clean:
 publish: all
 	git pull
 	ruby version_up.rb
+	git add package.json
 	git commit -m "Bump up version"
 	npm publish
 	git push origin master
